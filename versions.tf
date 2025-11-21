@@ -3,7 +3,7 @@ terraform {
   required_providers {
     dbtcloud = {
         source = "dbt-labs/dbtcloud"
-        version = ">= 1.6.0"
+        version = ">= 0.3.10"
     }
   }
 }
