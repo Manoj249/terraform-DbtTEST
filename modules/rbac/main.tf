@@ -8,6 +8,11 @@ terraform {
   }
 }
 
+provider "dbtcloud" {
+    account_id = var.account_id
+    token = var.service_token
+}
+
 resource "dbtcloud_group" "dbtcloudgroup" {
   name = var.group_name
 }
