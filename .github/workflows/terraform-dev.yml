@@ -33,7 +33,7 @@ jobs:
       - name: Set dbt Cloud credentials
         run: |
           echo "TF_VAR_account_id=${{ secrets.DBT_ACCOUNT_ID }}" >> $GITHUB_ENV
-          echo "TF_VAR_service_token=${{ secrets.DBT_SERVICE_TOKEN }}" >> $GITHUB_ENV
+          echo "TF_VAR_token=${{ secrets.DBT_SERVICE_TOKEN }}" >> $GITHUB_ENV
  
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
