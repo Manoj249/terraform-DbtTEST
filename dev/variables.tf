@@ -20,4 +20,10 @@ variable "account_id" {
 
 variable "service_token" {
   type = string
+  sensitive = true
+}
+
+variable "environment_type" {
+  type = string
+  default = "development"
 }
